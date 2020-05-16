@@ -58,8 +58,8 @@ mmiStaticInfoLogging = { 4 , rtContextSystems , loggingMetaInfo , 0 , NULL ,
 mmiStatic = { { rtBlockSignals , 0 , ( NULL ) , 0 , ( NULL ) , 0 } , { ( NULL
 ) , 0 , ( NULL ) , 0 } , { rtBlockStates , 1 } , { rtDataTypeMap ,
 rtDimensionMap , rtFixPtMap , rtElementMap , rtSampleTimeMap ,
-rtDimensionArray } , "float" , { 1858411190U , 3300102933U , 2263293881U ,
-2411813872U } , & mmiStaticInfoLogging , 0 , 0 } ; const
+rtDimensionArray } , "float" , { 568184509U , 931820405U , 2752972532U ,
+4173303302U } , & mmiStaticInfoLogging , 0 , 0 } ; const
 rtwCAPI_ModelMappingStaticInfo * Traction_Model_GetCAPIStaticMap ( void ) {
 return & mmiStatic ; }
 #ifndef HOST_CAPI_BUILD

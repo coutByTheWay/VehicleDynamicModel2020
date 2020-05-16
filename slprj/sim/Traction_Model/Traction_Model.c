@@ -178,7 +178,7 @@ mdlrefDW , const mxArray * ssDW ) { ( void ) ssDW ; ( void ) mdlrefDW ;
 mr_Traction_Model_restoreDataFromMxArray ( & ( mdlrefDW -> rtb ) , ssDW , 0 ,
 0 , sizeof ( mdlrefDW -> rtb ) ) ; } void
 mr_Traction_Model_RegisterSimStateChecksum ( SimStruct * S ) { const uint32_T
-chksum [ 4 ] = { 2980025726U , 2199629799U , 49480707U , 523401414U , } ;
+chksum [ 4 ] = { 1127160603U , 3906083803U , 2804828667U , 2986194498U , } ;
 slmrModelRefRegisterSimStateChecksum ( S , "Traction_Model" , & chksum [ 0 ]
 ) ; } mxArray * mr_Traction_Model_GetSimStateDisallowedBlocks ( ) { return
 NULL ; }
