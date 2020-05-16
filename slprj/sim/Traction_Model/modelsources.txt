@@ -1,2 +1,0 @@
-  Traction_Model.c
-
