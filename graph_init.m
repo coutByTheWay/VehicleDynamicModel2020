@@ -14,6 +14,7 @@ function[SOCfMap, H2CostMap] = graph_init (P, PSRsn, SOCsn, Psn) %ss refers to s
     P=P(1:Psn);
     
     SOCfMap=zeros(length(P), length(SOCd), length(PSRd)); %instantiate state transition dataset
+    disp(size(SOCfMap));
     H2CostMap=zeros(length(P), length(SOCd), length(PSRd)); %instantiate instant cost dataset
     
     for i = 1:length(P)
@@ -21,7 +22,7 @@ function[SOCfMap, H2CostMap] = graph_init (P, PSRsn, SOCsn, Psn) %ss refers to s
            for k = 1:length(PSRd) 
                disp([P(i), SOCd(j), PSRd(k)]);
                [SOCf, H2]=simData(P(i), SOCd(j), PSRd(k));
-               if((SOCf(i,j,k)<40) ||  (SOCf(i,j,k)>70))
+               if((SOCfMap(i,j,k)<.4) ||  (SOCfMap(i,j,k)>.7))
                    SOCfMap(i,j,k)=0;
                    H2CostMap(i,j,k)=10e20;
                else
